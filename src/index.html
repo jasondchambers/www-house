@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Input Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="before-after">
+        <div class='img' style="background-image: url('images/Patio_after.jpg')"></div>
+        <div class='img before-img' style="background-image: url('images/Patio_before.jpg'); width: 50%"></div>
+        <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider-1">
+    </div>
+
+    <div class="before-after">
+        <div class='img' style="background-image: url('images/Beckys_bedroom_after.jpg')"></div>
+        <div class='img before-img' style="background-image: url('images/Beckys_bedroom_before.jpg'); width: 50%"></div>
+        <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider-2">
+    </div>
+
+    <div class="before-after">
+        <div class='img' style="background-image: url('images/Rear1_after.jpg')"></div>
+        <div class='img before-img' style="background-image: url('images/Rear1_before.jpg'); width: 50%"></div>
+        <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider-3">
+    </div>
+
+    <div class="before-after">
+        <div class='img' style="background-image: url('images/Fireplace_squareon_after.jpg')"></div>
+        <div class='img before-img' style="background-image: url('images/Fireplace_squareon_before.jpg'); width: 50%"></div>
+        <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider-4">
+    </div>
+
+    <div class="before-after">
+        <div class='img' style="background-image: url('images/Fireplace_kitchen_after.jpg')"></div>
+        <div class='img before-img' style="background-image: url('images/Fireplace_kitchen_before.jpg'); width: 50%"></div>
+        <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider-4">
+    </div>
+
+    <div class="before-after">
+        <div class='img' style="background-image: url('images/Livingroom_after.jpg')"></div>
+        <div class='img before-img' style="background-image: url('images/Livingroom_before.jpg'); width: 50%"></div>
+        <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider-4">
+    </div>
+
+    <script>
+        // Get references to the range input elements and the before image elements
+        const sliders = document.querySelectorAll('.slider');
+        const beforeImages = document.querySelectorAll('.before-img');
+
+        // Loop through all sliders and add event listeners
+        sliders.forEach((slider, index) => {
+            slider.addEventListener('input', function () {
+                // Update the width of the corresponding before image based on the slider value
+                beforeImages[index].style.width = slider.value + "%";
+            });
+        });
+    </script>
+</body>
+</html>
