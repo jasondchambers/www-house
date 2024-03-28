@@ -1,7 +1,7 @@
 # www-house
 Website for showcasing before and after for the house remodeling project.
 
-The website does not yet have a custom domain (TODO).
+The website is called [stratfordremodel.com](https://stratfordremodel.com).
 
 During development, simply build and run as follows
 
@@ -16,7 +16,7 @@ To run, you can simply pull down the image from GHCR:
 
 Replace tag with the desired number. You can find these on [GitHub](https://github.com/jasondchambers/www-house/pkgs/container/www-house).
 
-The pipeline also publishes to DockerHub, as this is supported by GCP (Google Cloud Run). It is published at this [location](https://hub.docker.com/repository/docker/yzxbmlf/www-house/general). Run as follows:
+The pipeline also publishes to DockerHub. It is published at this [location](https://hub.docker.com/repository/docker/yzxbmlf/www-house/general). Run as follows:
 
     $ docker run -p 8080:80 yzxbmlf/www-house:<tag>
 
