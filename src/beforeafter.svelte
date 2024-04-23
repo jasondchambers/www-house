@@ -43,7 +43,7 @@
 	main {
 		display: grid;
 		place-items: center;
-		min-height: 80vh;
+		padding: 10px;
 	}
 
 	.container {
