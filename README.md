@@ -25,5 +25,5 @@ Replace tag with the desired number. You can find these on [Docker Hub](https://
 The container is deployed using Google Cloud Run and can be managed in [Google Cloud](https://console.cloud.google.com/home/dashboard?hl=en&project=www-house).
 
 The domain stratfordremodel.com is managed using [SquareSpace](https://account.squarespace.com/domains).
-
+ 
 The deployed container in Google Cloud Run, is connected to a Firebase Hosting site. This was the simplest way to associate my custom domain with it. [Firebase Console](https://console.firebase.google.com/project/www-house/hosting/sites).
