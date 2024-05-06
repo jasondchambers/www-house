@@ -3,7 +3,13 @@ Website for showcasing before and after for the house remodeling project.
 
 The website is called [stratfordremodel.com](https://stratfordremodel.com).
 
-During development, simply build and run as follows
+Built using [Svelte](https://svelte.dev). To learn how I developed this website and discover why I made the decision to use Svelte, be sure to read this [article](https://circleinaspiral.com/posts/website-building/).
+
+For the best development experience, run as follows:
+
+    $ npm run dev
+
+Build and run as a container as follows:
 
     $ docker build -t www-house:latest .
     $ docker scout quickview
@@ -21,9 +27,3 @@ The pipeline also publishes to DockerHub. It is published at this [location](htt
     $ docker run -p 8080:80 yzxbmlf/www-house:<tag>
 
 Replace tag with the desired number. You can find these on [Docker Hub](https://hub.docker.com/repository/docker/yzxbmlf/www-house/general).
-
-The container is deployed using Google Cloud Run and can be managed in [Google Cloud](https://console.cloud.google.com/home/dashboard?hl=en&project=www-house).
-
-The domain stratfordremodel.com is managed using [SquareSpace](https://account.squarespace.com/domains).
- 
-The deployed container in Google Cloud Run, is connected to a Firebase Hosting site. This was the simplest way to associate my custom domain with it. [Firebase Console](https://console.firebase.google.com/project/www-house/hosting/sites).
