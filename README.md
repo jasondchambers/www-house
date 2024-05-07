@@ -7,6 +7,7 @@ Built using [Svelte](https://svelte.dev). To learn how I developed this website 
 
 For the best development experience, run as follows:
 
+    $ npm install
     $ npm run dev
 
 Build and run as a container as follows:
