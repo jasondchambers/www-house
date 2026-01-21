@@ -1,5 +1,5 @@
 # www-house
-Website for showcasing before and after for the house remodeling project.
+Website for showcasing before and after for the house remodeling project. 
 
 The website is called [stratfordremodel.com](https://stratfordremodel.com).
 
